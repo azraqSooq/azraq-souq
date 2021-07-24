@@ -1,0 +1,26 @@
+{
+  "name": "azraq-souq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
+    "bootstrap": "^5.0.2",
+    "mdb-react-ui-kit": "^1.1.0",
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.0-beta.4",
+    "react-dom": "17.0.2",
+    "sass": "^1.36.0"
+  },
+  "devDependencies": {
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
