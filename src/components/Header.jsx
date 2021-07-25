@@ -3,12 +3,12 @@ import {Container,Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button 
 import styles from '../../styles/component/header.module.scss'
 import Link from 'next/link'
 
-export const  Header = () => {
+const  Header = () => {
     return (
     <>
         <div className={styles.firstNav}>
 
-            <Navbar className={styles.test} collapseOnSelect expand="md" bg="dark" variant="dark">
+            <Navbar className={styles.mainNav} collapseOnSelect expand="md" bg="dark" variant="dark">
 
                 <div className={styles.signPhone}>
                         <p>تسجيل دخول</p>
@@ -61,16 +61,12 @@ export const  Header = () => {
             </Row>
         </Container>
 
-
-            {/* <div style={{width:"100%", backgroundColor:"#1252A6" }}> 
-                gfdgdg
-            </div> */}
     </>
    );
   }
 
 
-
+export default Header
 
 
 

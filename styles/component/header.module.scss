@@ -4,14 +4,12 @@ $secondary-color: #EEE8A9 ;
 
 /*  --------------------------- mobile screen ------------*/
 
-.test {
-    background-color: #1252A6 !important;
+.mainNav {
+    background-color: $primary-color !important;
 }
 
 .signPhone {
-    // background-color: #1252A6 !important;
 
-   
     height: 30px;
     display: flex;
    
@@ -46,7 +44,7 @@ $secondary-color: #EEE8A9 ;
 /* ------------------------------ lab screen -------------------*/ 
 
 .secondNav {
-    height: 100px;
+    height: 104px;
     padding: 20px 30px;
     display: none;
     background-color: $primary-color;
@@ -54,6 +52,7 @@ $secondary-color: #EEE8A9 ;
 
     .firstRow {
         .colOne {
+            
 
         }
 
@@ -147,16 +146,3 @@ $secondary-color: #EEE8A9 ;
     }
 }
 
-
-@media screen and (max-width: 765px)  {
-  
-  
-    
-}
-
-
-// 567
-
-// 792
-
-// 634
