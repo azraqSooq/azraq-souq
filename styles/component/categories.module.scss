@@ -4,9 +4,21 @@ $secondary-color: #EEE8A9 ;
 
 .categoriesContainer {
 
+    .categoryTitle {
+        margin-top: 50px;
+   
+        
+        p {
+            font-size: 20px; 
+            border-bottom: $primary-color solid 2px;
+            width: 60px;
+            color: black !important;
+        }
+    }
+
     .categories {
 
-        margin-top: 70px;
+        margin-top: 10px;
         .category {
             .categoryCard{
                 // background-color: ;
