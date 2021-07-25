@@ -1,0 +1,38 @@
+$background-color: #F4F5F7 ;
+$primary-color: #1252A6;
+$secondary-color: #EEE8A9 ;
+
+.categoriesContainer {
+
+    .categories {
+
+        margin-top: 70px;
+        .category {
+            .categoryCard{
+                // background-color: ;
+                padding: 8px;
+                margin: 5px;
+                margin-bottom: 30px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                transition: transform 0.4s;
+                h2{
+                    color: black !important;
+                    margin-top: 15px;
+                    font-size: 30px;
+                    
+                }
+                .categoryImage{
+                    transition: transform 0.4s;
+
+                }
+                .categoryImage:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .categoryCard:hover {
+                transform: scale(1.03);
+            }
+        }
+    }
+
+}
