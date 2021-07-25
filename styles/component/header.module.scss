@@ -1,61 +1,162 @@
+$background-color: #F4F5F7 ;
+$primary-color: #1252A6;
+$secondary-color: #EEE8A9 ;
 
+/*  --------------------------- mobile screen ------------*/
 
+.test {
+    background-color: #1252A6 !important;
+}
 
-.header {
-    background-color: #1252A6 !important ;
-    height: 80px ;
-    // padding: 0 35px;
+.signPhone {
+    // background-color: #1252A6 !important;
 
-    // .logo {
-    //     margin-top: 15px;
-    // }
+   
+    height: 30px;
+    display: flex;
+   
+    margin: 0 auto 0 13px;
+    border: $secondary-color solid 1px;
+    padding: 5px;
+    margin-bottom: 7px;
+    p {
+        font-size: small;
+        margin-left: 10px;
     
-    // .nav {
-    //     display: flex;
-    //     list-style: none;
+    }
+}
 
-    //     div {
-    //         margin-top: 10px;
-    //         margin-left: 30px;
-    //     }
-    // }
+.navCollapse {
+    
+    a {
+        margin-top: 15px;
+        margin-right: 10px ;
+        text-decoration: none;
+        transition: all .4s;
+    }
 
-    // .sign {
-    //     text-align: left;
-    //     margin-top: 18px;
-
-    // }
+    a:hover {
+        padding: 6px;
+        background-color: $background-color;
+        color: black !important;
+    }
 }
 
 
-// @media screen and (max-width: 700px) {
-//     .header {
-//         height: 70px ;
-//         .nav {
-//             display: none;
-//         }
+/* ------------------------------ lab screen -------------------*/ 
 
-//         .logo {
-//             display: flex;
-
-//         }
-//         .iconBarDev {
-//             margin-top: 7px;
-//             text-align: left;
-
-//             .iconBar {
-//                 font-size: 50px;
-//             }
-           
-//         }
-//     }
+.secondNav {
+    height: 100px;
+    padding: 20px 30px;
+    display: none;
+    background-color: $primary-color;
     
-// }
-// @media screen and (min-width: 700px) {
-//     .iconBarDev {
-//         display: none;
-//     }
+
+    .firstRow {
+        .colOne {
+
+        }
+
+        .colTwo {
+            padding: 5px;
+            max-width: 230px !important;
+            height: 35px;
+            display: flex;
+            flex-direction: row-reverse;
+            border: $secondary-color solid 1px;
+            
+        
+
+            a {
+                text-decoration: none;
+                transition: all .4s;
+            }
+
+            a, p {
+                margin-left: 10px;
+            }
+
+            a:hover {
+                opacity: .7;
+            }
+
+        }
+    }
+
+    .secondRow {
+        margin-top: 6px;
+        .colOne {
+            display: flex;
+
+        }
+        a {
+            text-decoration: none;
+            margin-left: 40px;
+            transition: all .4s;
+        }
+        
+        a:hover {
+            background-color: $background-color;
+            color: black !important;
+            padding: 7px;
+        }
+
+    }
+}
+
+
+/* ------------------------------- media query ----------------------*/
+
+@media screen and (min-width:634px) and (max-width: 844px) {
+
+    .signPhone {
+
+   
+       
+        margin: 0 auto 0 80px;
+        p {
+            font-size: small;
+            margin-left: 10px;
+        
+        }
+    }
     
-// }
+}
+
+@media screen and (min-width: 900px) and (max-width:3000px) {
+    .signPhone {
+       
+        display: none !important;
+    }
+
+    .navCollapse {
+        display: none !important;
+    }
+    
+}
 
 
+@media screen and (min-width: 765px)  {
+  
+    .firstNav {
+        display: none;
+    }
+
+    .secondNav {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 765px)  {
+  
+  
+    
+}
+
+
+// 567
+
+// 792
+
+// 634
