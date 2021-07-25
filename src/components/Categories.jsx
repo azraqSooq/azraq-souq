@@ -25,7 +25,13 @@ const Categories = () => {
     return (
         <div>
             <Container className={styles.categoriesContainer}>
+                <Row className={styles.categoryTitle}>
+                    <Col>
+                        <p>الفئــات</p>
+                    </Col>
+                </Row>
                 <Row className={styles.categories} >
+    
                     {categories.map((el, inx) => {
                         return (
                             <Col className={styles.category} key={inx} xs={12} md={4} lg={{ span: 3 }}>
