@@ -14,7 +14,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 const Footer = () => {
     return (
         <div className={styles.footerConParent}>
-            <Container fluid="true" className={styles.footerContainer}>
+            <Container fluid="xxl" className={styles.footerContainer}>
                 <Row className={styles.footerRowOne}>
                     <h3> تواصــل معــنا  :</h3>
                     <Col xs={7}  className={styles.footerContact}>
