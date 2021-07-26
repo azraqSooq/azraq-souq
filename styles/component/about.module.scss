@@ -1,0 +1,43 @@
+
+.aboutConParent {
+    background-color: #ffff;
+    margin-top: 150px;
+    padding: 50px;
+
+    .aboutContainer {
+
+        .aboutRowOne {
+            
+            .paragraphContainer {
+                align-self: center;
+            
+                
+                h2 {
+                    color: black !important;
+                    text-align: center;
+                }
+                
+                p {
+                    color: black !important;
+                    margin-top: 40px;
+                }
+            }
+
+            .imageContainer {
+                div {
+
+                    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;       
+                             
+                }
+                .aboutImage {
+                    // overflow: hidden;
+                    
+                }
+
+                
+
+            }
+        }
+
+    }
+}
