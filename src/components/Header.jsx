@@ -16,7 +16,7 @@ const  Header = () => {
                         <Link href="/"><a>انشاء حساب</a></Link>
                 </div>
                 <Container style={{width: "100% !important"}}>
-                <Navbar.Brand href="#home" className={styles.logoTitle}>سـوق الأزرق</Navbar.Brand>
+                <Navbar.Brand href="#home" className={styles.logoTitle}>أزرق ستـــور</Navbar.Brand>
                 <Navbar.Toggle className={styles.headerToggle} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse  id="responsive-navbar-nav">
                     <Nav  className={`me-auto ${styles.navCollapse}`}>
@@ -41,7 +41,7 @@ const  Header = () => {
         <Container fluid="true" className={styles.secondNav}>
             <Row className={styles.firstRow}>
                 <Col className={styles.colOne}>
-                    <h2>سوق الأزرق </h2>
+                    <h2>أزرق ستـــور </h2>
                 </Col>
                 <Col className={styles.colTwo}>
 

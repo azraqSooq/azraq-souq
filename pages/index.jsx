@@ -12,10 +12,9 @@ export default function Home() {
     <>
     <body>
       <Header />
-      < Categories />
-      <About />
+        < Categories />
+        <About />
       <Footer />
-
     </body>
   </>
   )
