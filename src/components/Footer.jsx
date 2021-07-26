@@ -5,7 +5,6 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import SettingsPhoneIcon from '@material-ui/icons/SettingsPhone';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import HeadsetMicIcon from '@material-ui/icons/HeadsetMic';
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 import  FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
