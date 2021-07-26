@@ -11,14 +11,14 @@ const  Header = () => {
             <Navbar className={styles.mainNav} collapseOnSelect expand="md" bg="dark" variant="dark">
 
                 <div className={styles.signPhone}>
-                        <p>تسجيل دخول</p>
+                        <Link href="/"><a>تسجيل دخول</a></Link>
                         <p>|</p>
-                        <p>انشاء حساب</p>
+                        <Link href="/"><a>انشاء حساب</a></Link>
                 </div>
                 <Container style={{width: "100% !important"}}>
-                <Navbar.Brand href="#home">سـوق الأزرق</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Brand href="#home" className={styles.logoTitle}>سـوق الأزرق</Navbar.Brand>
+                <Navbar.Toggle className={styles.headerToggle} aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse  id="responsive-navbar-nav">
                     <Nav  className={`me-auto ${styles.navCollapse}`}>
                         <Link href="/"><a>الرئيســية</a></Link>
                         <Link href="/"><a>تواصل معــنا</a></Link>
@@ -56,6 +56,7 @@ const  Header = () => {
                     <Link href="/"><a className={styles.links}>الرئيســية</a></Link>
                     <Link href="/"><a  className={styles.links}>تواصل معــنا</a></Link>
                     <Link href="/"><a  className={styles.links}>فئــــات</a></Link>
+                    
                 </Col>
                
             </Row>

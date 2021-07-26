@@ -6,21 +6,41 @@ $secondary-color: #EEE8A9 ;
 
 .mainNav {
     background-color: $primary-color !important;
+    border-bottom: 2px solid #f3e117;
+
+    .logoTitle {
+        color: $secondary-color;
+    }
+    
+    
+    .headerToggle {
+        color: $secondary-color;
+
+    }
+    
 }
 
 .signPhone {
 
     height: 30px;
     display: flex;
-   
-    margin: 0 auto 0 13px;
+    margin: 3px auto 0 13px;
     border: $secondary-color solid 1px;
     padding: 5px;
-    margin-bottom: 7px;
-    p {
+    margin-bottom: 12px;
+    a,p {
+        color: $secondary-color;
         font-size: small;
         margin-left: 10px;
+        text-decoration: none;
+        margin-right: 5px;
+
+        transition: all .4s;
     
+    }
+
+    a:hover {
+        opacity: .7;
     }
 }
 
@@ -31,6 +51,8 @@ $secondary-color: #EEE8A9 ;
         margin-right: 10px ;
         text-decoration: none;
         transition: all .4s;
+        padding-bottom: 10px;
+        color: $secondary-color;
     }
 
     a:hover {
@@ -44,7 +66,8 @@ $secondary-color: #EEE8A9 ;
 /* ------------------------------ lab screen -------------------*/ 
 
 .secondNav {
-    height: 104px;
+    border-bottom: 2px solid #f3e117;
+    height: 110px;
     padding: 20px 30px;
     display: none;
     background-color: $primary-color;
@@ -52,6 +75,11 @@ $secondary-color: #EEE8A9 ;
 
     .firstRow {
         .colOne {
+
+            h2 {
+                color: $secondary-color;
+
+            }
             
 
         }
@@ -73,6 +101,7 @@ $secondary-color: #EEE8A9 ;
 
             a, p {
                 margin-left: 10px;
+                color: $secondary-color;
             }
 
             a:hover {
@@ -87,8 +116,11 @@ $secondary-color: #EEE8A9 ;
         .colOne {
             display: flex;
 
+
+
         }
         a {
+            color: $secondary-color;
             text-decoration: none;
             margin-left: 40px;
             transition: all .4s;
@@ -116,6 +148,7 @@ $secondary-color: #EEE8A9 ;
         p {
             font-size: small;
             margin-left: 10px;
+            color: $secondary-color;
         
         }
     }
