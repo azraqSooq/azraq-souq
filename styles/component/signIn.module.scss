@@ -2,11 +2,11 @@ $background-color: #F4F5F7;
 $primary-color   : #1252A6;
 $secondary-color : #EEE8A9;
 
-.signUpConParent {
+.signInConParent {
     // min-height: 100vh;
     margin-top: 100px;
 
-    .signUpForm {
+    .signInForm {
         display       : flex;
         flex-direction: column;
         align-items   : center;
@@ -50,18 +50,18 @@ $secondary-color : #EEE8A9;
             width : 280px;
         }
 
-        .fullNameInput {
-            display        : flex;
-            width          : 278px;
-            justify-content: space-between;
+        // .fullNameInput {
+        //     display        : flex;
+        //     width          : 278px;
+        //     justify-content: space-between;
 
-            input {
-                width : 135px;
-                height: 45px;
-            }
-        }
+        //     input {
+        //         width : 135px;
+        //         height: 45px;
+        //     }
+        // }
 
-        .creatAccountBtn {
+        .signInBtn {
             background-color: $secondary-color;
             color           : $primary-color !important;
             font-weight     : bold;

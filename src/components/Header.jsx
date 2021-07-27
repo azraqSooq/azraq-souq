@@ -11,7 +11,7 @@ const  Header = () => {
             <Navbar className={styles.mainNav} collapseOnSelect expand="md" bg="dark" variant="dark">
 
                 <div className={styles.signPhone}>
-                        <Link href="/"><a>تسجيل دخول</a></Link>
+                        <Link href="/signin"><a>تسجيل دخول</a></Link>
                         <p>|</p>
                         <Link href="/signup"><a>انشاء حساب</a></Link>
                 </div>
@@ -23,15 +23,6 @@ const  Header = () => {
                         <Link href="/"><a>الرئيســية</a></Link>
                         <Link href="/"><a>تواصل معــنا</a></Link>
                         <Link href="/"><a>فئـــات</a></Link>
-                    {/* <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                    </NavDropdown> */}
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
@@ -45,7 +36,7 @@ const  Header = () => {
                 </Col>
                 <Col className={styles.colTwo}>
 
-                    <Link href="/"><a className={styles.links}>تسجـيل دخــول</a></Link>
+                    <Link href="/signin"><a className={styles.links}>تسجـيل دخــول</a></Link>
                     <p>|  </p>
                     <Link href="/signup"><a  className={styles.links}>انشــاء حسـاب</a></Link>
                 </Col>
