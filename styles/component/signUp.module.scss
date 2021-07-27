@@ -4,9 +4,26 @@ $secondary-color : #EEE8A9;
 
 .signUpConParent {
     // min-height: 100vh;
-    margin-top: 100px;
+    // margin-top: 100px;
+    padding: 50px;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    a {
+      
+        margin-top: 30px;
+        // text-decoration: none;
+    }
+
 
     .signUpForm {
+        margin-bottom: 14px;
+
         display       : flex;
         flex-direction: column;
         align-items   : center;
@@ -19,7 +36,7 @@ $secondary-color : #EEE8A9;
             .floatingLabel {
                 font-size     : 13px;
                 font-weight   : bolder;
-                color         : #cccccc;
+                color         : #ada9a9;
                 position      : absolute;
                 pointer-events: none;
                 top           : 9px;
@@ -38,6 +55,7 @@ $secondary-color : #EEE8A9;
                 opacity    : 1;
                 color      : $primary-color;
                 font-weight: bolder;
+              
             }
         }
 
@@ -47,17 +65,22 @@ $secondary-color : #EEE8A9;
 
         input {
             height: 45px;
-            width : 280px;
+            width : 250px;
+            background-color: rgba(211, 211, 211, 0.404);
+            outline: none;
+            border: 1px $primary-color solid;
+
         }
 
         .fullNameInput {
             display        : flex;
-            width          : 278px;
+            width          : 250px;
             justify-content: space-between;
 
             input {
-                width : 135px;
+                width : 120px;
                 height: 45px;
+                
             }
         }
 
@@ -66,7 +89,7 @@ $secondary-color : #EEE8A9;
             color           : $primary-color !important;
             font-weight     : bold;
             font-size       : 20px;
-            width           : 280px;
+            width           : 250px;
 
         }
 
@@ -74,4 +97,47 @@ $secondary-color : #EEE8A9;
             text-decoration: none;
         }
     }
+}
+
+
+
+@media screen and (min-width: 763px) {
+
+    .signUpConParent {
+
+        width: 600px;
+        height: 520px;
+  
+
+        .signUpForm {
+            input {
+                height: 60px;
+                width : 300px;    
+            }
+    
+            .fullNameInput {
+                width          : 300px;
+                input {
+                    width : 145px;
+                    height: 60px;
+                    
+                }
+            }
+
+            .creatAccountBtn {
+                width           : 300px;
+    
+            }
+    
+        }
+
+
+        a {
+            margin-right: 100px;
+        }
+    }
+    
+
+
+    
 }

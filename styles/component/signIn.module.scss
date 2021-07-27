@@ -4,9 +4,24 @@ $secondary-color : #EEE8A9;
 
 .signInConParent {
     // min-height: 100vh;
-    margin-top: 100px;
+    height: 380px;
+    padding: 50px;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+   
 
+    h4 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    a {
+      
+        margin-top: 30px;
+        // text-decoration: none;
+    }
     .signInForm {
+        margin-bottom: 14px;
         display       : flex;
         flex-direction: column;
         align-items   : center;
@@ -15,11 +30,12 @@ $secondary-color : #EEE8A9;
             position: relative;
 
             margin-bottom: 25px;
+            
 
             .floatingLabel {
                 font-size     : 13px;
                 font-weight   : bolder;
-                color         : #cccccc;
+                color         : #ada9a9;
                 position      : absolute;
                 pointer-events: none;
                 top           : 9px;
@@ -40,33 +56,26 @@ $secondary-color : #EEE8A9;
                 font-weight: bolder;
             }
         }
-
+        
         .row {
             margin-top: 50px;
         }
-
+        
         input {
             height: 45px;
-            width : 280px;
+            width : 250px;
+            background-color: rgba(211, 211, 211, 0.404);
+            outline: none;
+            border: 1px $primary-color solid;
         }
-
-        // .fullNameInput {
-        //     display        : flex;
-        //     width          : 278px;
-        //     justify-content: space-between;
-
-        //     input {
-        //         width : 135px;
-        //         height: 45px;
-        //     }
-        // }
 
         .signInBtn {
             background-color: $secondary-color;
             color           : $primary-color !important;
             font-weight     : bold;
-            font-size       : 20px;
-            width           : 280px;
+            font-size       : 17px;
+            width           : 250px;
+            height: 45px;
 
         }
 
@@ -75,3 +84,39 @@ $secondary-color : #EEE8A9;
         }
     }
 }
+
+
+@media screen and (min-width: 763px) {
+
+    .signInConParent {
+        width: 600px;
+        height: 475px;
+        .signInForm {
+            
+            input {
+
+                height: 60px;
+                width : 300px;
+    
+     
+            }
+    
+            .signInBtn {
+
+                height: 60px;
+                width : 300px;
+    
+
+    
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            margin-right: 100px;
+        }
+    }
+    
+}
+    
