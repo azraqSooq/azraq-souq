@@ -1,0 +1,28 @@
+.SignUpPageContainer {
+    display: flex;
+
+    .SignUp {
+        // width: 50%;
+
+        margin: 0 auto;
+        margin-top: 70px;
+
+    }
+
+    .HeroSign {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SignUpPageContainer {
+        // flex-direction: column;
+
+        .HeroSign {
+            display: none;
+            
+     
+         }
+    }
+    
+}

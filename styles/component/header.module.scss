@@ -9,7 +9,11 @@ $secondary-color : #EEE8A9;
     border-bottom   : 2px solid #f3e117;
 
     .logoTitle {
-        color: $secondary-color;
+        a {
+
+            color: $secondary-color;
+            text-decoration: none;
+        }
     }
 
 
@@ -78,8 +82,11 @@ $secondary-color : #EEE8A9;
     .firstRow {
         .colOne {
 
-            h2 {
+            a {
                 color: $secondary-color;
+                text-decoration: none;
+                font-size: 25px;
+               
 
             }
 
@@ -115,7 +122,7 @@ $secondary-color : #EEE8A9;
     }
 
     .secondRow {
-        margin-top: 6px;
+        margin-top: 18px;
 
         .colOne {
             display: flex;

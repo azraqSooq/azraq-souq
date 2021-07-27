@@ -1,0 +1,38 @@
+$background-color: #F4F5F7;
+$primary-color   : #1252A6;
+$secondary-color : #EEE8A9;
+
+
+
+.heroSignContainer {
+    // background:  #eee8a925 !important;
+    background-image: url('/images/heroSign.jpg');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+
+    .heroSignOpacity {
+        position: absolute;
+        background-color:  rgba(7, 6, 1, 0.596) ;
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .heroSignHeader {
+            color: $secondary-color;
+            
+        }
+        .heroSignMain {
+            color: $secondary-color;
+            
+        }
+        .heroSignFooter {
+            color: $secondary-color;
+    
+        }
+    }
+
+}
