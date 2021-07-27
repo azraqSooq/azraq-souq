@@ -18,10 +18,7 @@ const Categories = () => {
         { name: 'أدوات منزلية', image: '/images/categoriesImage/housewares.jpeg' },
         { name: 'ادوات كهربائية', image: '/images/categoriesImage/electricaltools.jpeg' }
     ]
-    // for (let i = 0; i < 14; i++) {
-    //     categories.push(i)
-
-    // }
+ 
     return (
         <div>
             <Container className={styles.categoriesContainer}>
@@ -37,7 +34,7 @@ const Categories = () => {
                             <Col className={styles.category} key={inx} xs={12} md={4} lg={{ span: 3 }}>
                                 <MDBCard className={` ${styles.categoryCard} bg-image hover-zoom `} >
 
-                                    <Image className={styles.categoryImage} key={el.image} src={el.image} alt={el.name} width={400} height={300} />
+                                    <Image className={styles.categoryImage} key={el.image} src={el.image} alt={el.name} width={500} height={450} />
                                     <h2 key={el.name}> {el.name} </h2>
                                 </MDBCard>
                             </Col>
