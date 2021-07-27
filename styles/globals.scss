@@ -1,23 +1,21 @@
-$background-color: #F4F5F7 ;
+$background-color: #F4F5F7;
 
 html,
 body {
-  background-color: #F4F5F7  !important;
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  background-color: #F4F5F7 !important;
+  padding         : 0;
+  margin          : 0;
+  font-family     : -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
+  color          : inherit;
   text-decoration: none;
 }
 
 * {
   // color: #EEE8A9 !important;
-  box-sizing: border-box;
+  box-sizing : border-box;
   font-family: "Noto Naskh Arabic", "Open Sans", "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif !important;
 }
-
-

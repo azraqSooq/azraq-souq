@@ -1,0 +1,77 @@
+$background-color: #F4F5F7;
+$primary-color   : #1252A6;
+$secondary-color : #EEE8A9;
+
+.signInConParent {
+    // min-height: 100vh;
+    margin-top: 100px;
+
+    .signInForm {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+
+        .inputGroup {
+            position: relative;
+
+            margin-bottom: 25px;
+
+            .floatingLabel {
+                font-size     : 13px;
+                font-weight   : bolder;
+                color         : #cccccc;
+                position      : absolute;
+                pointer-events: none;
+                top           : 9px;
+                left          : 12px;
+                transition    : all 0.1s ease;
+                right         : 0;
+                padding-right : 8px;
+            }
+
+            input:focus~.floatingLabel,
+            input:not(:focus):valid~.floatingLabel {
+                top        : -20px;
+                bottom     : 0px;
+                left       : 0px;
+                font-size  : 13px;
+                opacity    : 1;
+                color      : $primary-color;
+                font-weight: bolder;
+            }
+        }
+
+        .row {
+            margin-top: 50px;
+        }
+
+        input {
+            height: 45px;
+            width : 280px;
+        }
+
+        // .fullNameInput {
+        //     display        : flex;
+        //     width          : 278px;
+        //     justify-content: space-between;
+
+        //     input {
+        //         width : 135px;
+        //         height: 45px;
+        //     }
+        // }
+
+        .signInBtn {
+            background-color: $secondary-color;
+            color           : $primary-color !important;
+            font-weight     : bold;
+            font-size       : 20px;
+            width           : 280px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
