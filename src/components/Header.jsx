@@ -13,7 +13,7 @@ const  Header = () => {
                 <div className={styles.signPhone}>
                         <Link href="/"><a>تسجيل دخول</a></Link>
                         <p>|</p>
-                        <Link href="/"><a>انشاء حساب</a></Link>
+                        <Link href="/signup"><a>انشاء حساب</a></Link>
                 </div>
                 <Container style={{width: "100% !important"}}>
                 <Navbar.Brand href="#home" className={styles.logoTitle}>أزرق ستـــور</Navbar.Brand>
@@ -47,7 +47,7 @@ const  Header = () => {
 
                     <Link href="/"><a className={styles.links}>تسجـيل دخــول</a></Link>
                     <p>|  </p>
-                    <Link href="/"><a  className={styles.links}>انشــاء حسـاب</a></Link>
+                    <Link href="/signup"><a  className={styles.links}>انشــاء حسـاب</a></Link>
                 </Col>
             </Row>
 
