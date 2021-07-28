@@ -1,0 +1,60 @@
+$background-color: #F4F5F7;
+$primary-color   : #1252A6;
+$secondary-color : #EEE8A9;
+
+
+.productsContainerParent {
+    margin-top: 20px;
+
+
+    .productsContainer {
+        background-color: #fff;
+        
+        .product {
+            display: flex;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px $secondary-color dashed;
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+            .imageColumn {
+
+            }
+
+            .descriptionColumn {
+                margin-right: 20px;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-around;
+                height: 80px;
+
+                p:first-child {
+                    font-size: 13px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+
+                .productBtn {
+
+                    .saveProduct {
+                        background-color: $secondary-color;
+                        
+                        height: 28px;
+                        
+                    }
+                    
+                    .callForProduct {
+                        background-color: $secondary-color;
+                        margin-right: 10px;
+                        height: 28px;
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -11,15 +11,11 @@ const Subscribe = () => {
                 <p className={styles.subscribeParagraph}>اشــترك الان وابــدأ فـي تســــويق منتــجــــاتــك</p>
                <Col>
             </Col>
-               <Link href="/">
+               <Link href="/signup">
                    <a>
                     <Button className={styles.subscribeButton} variant="contained">انشـــر منتجــاتـك</Button>
                    </a>
                 </Link>
-
-
-
-
             </div>
             
         </div>
