@@ -11,6 +11,7 @@ $secondary-color : #EEE8A9;
         background-color: #fff;
         
         .product {
+            height: 160px;
             display: flex;
             padding: 10px;
             margin-bottom: 10px;
@@ -25,8 +26,8 @@ $secondary-color : #EEE8A9;
                 margin-right: 20px;
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
-                height: 80px;
+                justify-content: space-around;
+                height: 135px;
 
                 p:first-child {
                     font-size: 13px;
