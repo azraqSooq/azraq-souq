@@ -1,0 +1,19 @@
+$background-color: #F4F5F7;
+$primary-color   : #1252A6;
+$secondary-color : #EEE8A9;
+
+
+.categoryBarConParent {
+
+    .categoryBarContainer {
+
+        .categoryBar {
+            display: flex;
+            flex-wrap: wrap;
+            .category {
+                margin: 10px;
+                
+            }
+        }
+    }
+}
