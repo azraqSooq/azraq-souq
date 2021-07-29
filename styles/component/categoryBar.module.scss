@@ -13,12 +13,12 @@ $secondary-color : #EEE8A9;
 
             .category {
                 border : 1px $secondary-color dashed;
-                display    : flex;
-                height: 28px;
+                display: flex;
+                height : 28px;
                 padding: 3px;
             }
 
-            
+
             a {
                 // margin-left: 10px;
 
@@ -26,7 +26,7 @@ $secondary-color : #EEE8A9;
                     color: $primary-color;
                 }
 
-               
+
             }
 
             a {
@@ -35,5 +35,51 @@ $secondary-color : #EEE8A9;
 
             }
         }
+    }
+}
+
+//------------------full screen--------------------------//
+
+@media screen and (min-width: 763px) {
+
+    .categoryBarConParent {
+        .categoryBarContainer {
+            .categoryBar {
+                display       : flex;
+                flex-direction: column;
+
+                .category {
+                    border       : 0px;
+                    margin-right : 130px;
+                    border-bottom: 1px $primary-color solid;
+                    width        : 140px;
+                    flex: 1;
+                    margin: 0 auto;
+                }
+
+
+                a {
+                    margin-bottom : 10px;
+                    height        : 30px;
+                    // padding: 3px;
+                    // margin-left: 10px;
+
+                    p {
+                        color       : $primary-color;
+                        margin-right: 10px;
+
+                    }
+
+
+                }
+
+                a {
+                    text-decoration: none;
+
+
+                }
+            }
+        }
+
     }
 }

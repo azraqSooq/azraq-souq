@@ -5,3 +5,27 @@
 
     // .Products {}
 }
+
+@media screen and (min-width: 763px) {
+    .productsPageContainer {
+        padding       : 13px;
+        margin-top    : 5px;
+        display       : flex;
+        flex-direction: row-reverse;
+        
+        .CategoryBar {
+            margin-right: 25%;
+            width      : 35%;
+            padding-top: 10px;
+            margin-top : 10px;
+            flex       : 1;
+            align-items: center;
+        }
+
+        .Products {
+            width: 65%;
+        }
+    }
+
+
+}
