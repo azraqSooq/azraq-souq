@@ -8,11 +8,31 @@ $secondary-color : #EEE8A9;
     .categoryBarContainer {
 
         .categoryBar {
-            display: flex;
+            display  : flex;
             flex-wrap: wrap;
+
             .category {
-                margin: 10px;
-                
+                border : 1px $secondary-color dashed;
+                display    : flex;
+                height: 28px;
+                padding: 3px;
+            }
+
+            
+            a {
+                // margin-left: 10px;
+
+                p {
+                    color: $primary-color;
+                }
+
+               
+            }
+
+            a {
+                text-decoration: none;
+
+
             }
         }
     }
