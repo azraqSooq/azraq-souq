@@ -2,6 +2,8 @@ import React from 'react'
 import styles from '../../styles/component/categoryBar.module.scss'
 import CakeIcon from '@material-ui/icons/Cake';
 import Image from 'next/image'
+import Link from 'next/link'
+
 export const CategoryBar = () => {
     // const categories = ['ملابس', 'كيك', 'حلويات', 'سيارات', 'تلفونات', 'طعام', 'احذيـة', 'اثـاث', 'أدوات منزلية', 'ادوات كهربائية'
     // ]
@@ -26,12 +28,14 @@ export const CategoryBar = () => {
                     {categories.map((category, idx) => {
                         return (
                             <>
-                                <span key={idx} className={styles.category}>
-                                    <Image src={`/images/iconBar/${category.icon}.png`} alt="" width={20} height={20} />
-                                    <p>
-                                        {category.name}
-                                    </p>
-                                </span>
+                                <Link href="/"><a>
+                                    <span key={idx} className={styles.category}>
+                                        <Image src={`/images/iconBar/${category.icon}.png`} alt={category.name} width={20} height={20} />
+                                        <p>
+                                            {category.name}
+                                        </p>
+                                    </span>
+                                </a></Link>
                             </>
                         )
                     })}
