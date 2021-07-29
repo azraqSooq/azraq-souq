@@ -14,7 +14,7 @@ const Products = () => {
                         <>
                             <div className={styles.product}>
                                     <div className={styles.imageColumn}>
-                                        <Image src="/images/about.jpg" alt="" width={170} height={100} />
+                                        <Image src="/images/about.jpg" alt="" width={135} height={130} />
                                     </div>
                                     
                                     <div className={styles.descriptionColumn}>
