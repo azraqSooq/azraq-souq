@@ -1,0 +1,27 @@
+
+.overViewDashConParent {
+    // padding: 15px;
+    // margin-top: 20px;
+
+    .overViewContainer {
+        background-color: #fff;
+        padding: 15px;
+
+        .overView {
+            border-bottom: .1px solid black;
+            height: 35px;
+
+        }
+
+        .analysis {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+            div {
+                text-align: center;
+            }
+
+        }
+    }
+}
