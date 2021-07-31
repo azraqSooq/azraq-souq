@@ -1,28 +1,30 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from '../../styles/component/dashTable.module.scss'
 import Button from '@material-ui/core/Button';
-import {Table, Carousel,  } from 'react-bootstrap' 
+import { Table, Carousel, } from 'react-bootstrap'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import Checkbox from '@material-ui/core/Checkbox';
 import Image from 'next/image'
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const TableDash = () => {
     const [index, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex, e) => {
-      setIndex(selectedIndex);
+        setIndex(selectedIndex);
     };
-  
+
     return (
         <>
             <div className={styles.tableDashConParent} >
                 <div className={styles.tableDashContainer}>
-
                     <div className={styles.addProduct}>
-                        <Button  variant="contained"  className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
+                        <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
                         <p>فرز</p>
 
                     </div>
+
 
                     <Table className={styles.table} striped bordered hover>
                         <thead>
@@ -54,8 +56,8 @@ const TableDash = () => {
                                 </td>
                                 <td>1</td>
                                 <td >
-                                    <Image placeholder="plur"  src="/images/categoriesImage/cars.jpeg"alt="hero" width={50} height={50} />  
-                                    <p>تشيز كــيك  </p>                     
+                                    <Image placeholder="plur" src="/images/categoriesImage/cars.jpeg" alt="hero" width={50} height={50} />
+                                    <p>تشيز كــيك  </p>
                                 </td>
                                 <td>5</td>
                                 <td>2/8/2021</td>
@@ -72,9 +74,9 @@ const TableDash = () => {
                                 </td>
                                 <td>1</td>
                                 <td>
-                                    <Image placeholder="plur"  src="/images/categoriesImage/shoes.jpeg"alt="hero" width={50} height={50} />  
-                                    <p>تشيز كــيك  </p>                     
-                                    
+                                    <Image placeholder="plur" src="/images/categoriesImage/shoes.jpeg" alt="hero" width={50} height={50} />
+                                    <p>تشيز كــيك  </p>
+
                                 </td>
                                 <td>5</td>
                                 <td>2/8/2021</td>
@@ -82,57 +84,82 @@ const TableDash = () => {
                                 <td>X</td>
                             </tr>
                         </tbody>
-                        </Table>
+                    </Table>
                 </div>
 
-                <div className={styles.carouselContainer}>
+                <div className={styles.cardDashContainer}>
+                    <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
 
-                    <Carousel className={styles.carousel} activeIndex={index} onSelect={handleSelect}>
-                        <Carousel.Item>
-                            <Image
-                            width={300}
-                            height={300}
-                            style={{position: "relative"}}
-                            src="/images/categoriesImage/sweets.jpeg"
-                            alt="First slide"
-                            />
-                            <h3 style={{position: "absolute", backgroundColor: "black"}} >First slide label</h3>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        {/* <Carousel.Item>
-                            <Image
-                            width={300}
-                            height={300}
-                            className="d-block w-100"
-                            src="/images/categoriesImage/sweets.jpeg"
-                            alt="Second slide"
-                            />
+                    <div className={styles.card}>
+                        <div className={styles.row1}>
+                            <EditIcon className={styles.editIcon} />
+                            <DeleteIcon className={styles.deleteIcon} />
+                        </div>
+                        <div className={styles.row2}>
+                            <Image placeholder="plur" src="/images/categoriesImage/cars.jpeg" alt="hero" width={80} height={70} />
+                            <h3>حلويـــــات</h3>
+                        </div>
+                        <div className={styles.row3}>
+                            <p>تاريــخ: 1/1/2021</p>
+                            <p>كميــة: 5</p>
+                        </div>
+                    </div>
 
-                            <Carousel.Caption>
-                            <h3 >Second slide label</h3>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <Image
-                            width={300}
-                            height={300}
-                            src="/images/categoriesImage/shoes.jpeg"
-                            className="d-block w-100"
-                            alt="Third slide"
-                            />
+                </div>
+                <div className={styles.cardDashContainer}>
+                    <div className={styles.card}>
+                        <div className={styles.row1}>
+                            <EditIcon className={styles.editIcon} />
+                            <DeleteIcon className={styles.deleteIcon} />
+                        </div>
+                        <div className={styles.row2}>
+                            <Image placeholder="plur" src="/images/categoriesImage/cars.jpeg" alt="hero" width={80} height={70} />
+                            <h3>حلويـــــات</h3>
+                        </div>
+                        <div className={styles.row3}>
+                            <p>تاريــخ: 1/1/2021</p>
+                            <p>كميــة: 5</p>
+                        </div>
+                    </div>
 
-                            <Carousel.Caption>
-                            <h3 >Third slide label</h3>
-                         
-                            </Carousel.Caption>
-                        </Carousel.Item> */}
-                    </Carousel>
+                </div>
+                <div className={styles.cardDashContainer}>
+                    <div className={styles.card}>
+                        <div className={styles.row1}>
+                            <EditIcon className={styles.editIcon} />
+                            <DeleteIcon className={styles.deleteIcon} />
+                        </div>
+                        <div className={styles.row2}>
+                            <Image placeholder="plur" src="/images/categoriesImage/cars.jpeg" alt="hero" width={80} height={70} />
+                            <h3>حلويـــــات</h3>
+                        </div>
+                        <div className={styles.row3}>
+                            <p>تاريــخ: 1/1/2021</p>
+                            <p>كميــة: 5</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div className={styles.cardDashContainer}>
+                    <div className={styles.card}>
+                        <div className={styles.row1}>
+                            <EditIcon className={styles.editIcon} />
+                            <DeleteIcon className={styles.deleteIcon} />
+                        </div>
+                        <div className={styles.row2}>
+                            <Image placeholder="plur" src="/images/categoriesImage/cars.jpeg" alt="hero" width={80} height={70} />
+                            <h3>حلويـــــات</h3>
+                        </div>
+                        <div className={styles.row3}>
+                            <p>تاريــخ: 1/1/2021</p>
+                            <p>كميــة: 5</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-        </div>
-    </>
+        </>
     )
 }
 
-export default TableDash 
+export default TableDash
