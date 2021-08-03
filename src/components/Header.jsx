@@ -25,6 +25,8 @@ const  Header = () => {
                         <Link href="/"><a>الرئيســية</a></Link>
                         <Link href="/"><a>تواصل معــنا</a></Link>
                         <Link href="/"><a>فئـــات</a></Link>
+
+                        {true ? <Link href="/seller/dashboard"><a>لــوحـة التــحكم</a></Link> : ''}
                     </Nav>
                 </Navbar.Collapse>
                 </Container>
@@ -49,7 +51,8 @@ const  Header = () => {
                     <Link href="/"><a className={styles.links}>الرئيســية</a></Link>
                     <Link href="/"><a  className={styles.links}>تواصل معــنا</a></Link>
                     <Link href="/"><a  className={styles.links}>فئــــات</a></Link>
-                    
+                    {true ? <Link href="/seller/dashboard"><a>لــوحـة التــحكم</a></Link> : ''}
+
                 </Col>
                
             </Row>
