@@ -7,6 +7,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Image from 'next/image'
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
+import Link from 'next/link'
 
 const TableDash = () => {
     const [index, setIndex] = useState(0);
@@ -20,7 +21,11 @@ const TableDash = () => {
             <div className={styles.tableDashConParent} >
                 <div className={styles.tableDashContainer}>
                     <div className={styles.addProduct}>
-                        <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
+                        <Link href="/seller/ad"><a>
+
+                            <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
+                       
+                        </a></Link>
                         <p>فرز</p>
 
                     </div>
@@ -88,7 +93,9 @@ const TableDash = () => {
                 </div>
 
                 <div className={styles.cardDashContainer}>
-                    <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
+                    <Link href="/seller/ad"><a >
+                        <Button variant="contained" className={styles.addProductBtn}>أضــــف منـتــــج < AddCircleOutlineIcon className={styles.addIcon} /> </Button>
+                    </a></Link>
 
                     <div className={styles.card}>
                         <div className={styles.row1}>

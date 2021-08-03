@@ -8,7 +8,7 @@ $secondary-color : #EEE8A9;
     // background-color: #fff;
 
     .tableDashContainer {
-        padding: 20px;
+        // padding: 20px;
         display: none;
         width  : 100%;
 
@@ -16,6 +16,11 @@ $secondary-color : #EEE8A9;
             display        : flex;
             justify-content: space-between;
 
+            
+            a {
+                text-decoration: none;
+                color           : $primary-color;
+            }
             .addProductBtn {
                 color           : $primary-color;
                 width           : 230px;
@@ -56,8 +61,12 @@ $secondary-color : #EEE8A9;
     .cardDashContainer {
 
         margin: 0 auto;
-        width : 90%;
-
+        // width : 90%;
+        a {
+            text-decoration: none;
+            color: $primary-color;
+           
+        }
         .addProductBtn {
             color           : $primary-color;
             width           : 170px;
