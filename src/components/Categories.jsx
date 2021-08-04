@@ -32,7 +32,7 @@ const Categories = () => {
     
                     {categories.map((el, inx) => {
                         return (
-                            <Col className={styles.category} key={inx} xs={12} md={4} lg={{ span: 3 }}>
+                            <Col className={styles.category} key={inx} xs={6} md={4} lg={{ span: 3 }}>
                                 <MDBCard className={` ${styles.categoryCard} bg-image hover-zoom `} >
 
                                    <Link href="/products"><a><Image className={styles.categoryImage} key={el.image} src={el.image} alt={el.name} width={500} height={450} /></a></Link> 
