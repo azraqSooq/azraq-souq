@@ -8,6 +8,16 @@ $secondary-color : #EEE8A9;
     background-color: $primary-color !important;
     border-bottom   : 2px solid #f3e117;
 
+    .shopCart {
+        margin       : 0px auto 0 13px;
+
+        .btn {
+            margin-top: 0;
+            padding: 4px 0 10px 8px;
+        }
+       
+    }
+
     .logoTitle {
         a {
 
@@ -80,6 +90,7 @@ $secondary-color : #EEE8A9;
 
 
     .firstRow {
+        height: 35px;
         .colOne {
 
             a {
@@ -89,10 +100,26 @@ $secondary-color : #EEE8A9;
                
 
             }
-
-
         }
 
+
+        .shopCart {
+            // margin       : 0px auto 0 0px;
+            // background-color: red;
+            text-align: end;
+    
+            .btn {
+                margin-top: 0;
+                padding: 4px 0 10px 8px;
+                
+                .shopIcon {
+                    font-size: 30px;
+                }
+            }
+           
+        }
+
+        
         .colTwo {
             padding       : 5px;
             max-width     : 230px !important;

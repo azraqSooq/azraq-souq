@@ -2,6 +2,20 @@ import React from 'react';
 import {Container,Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button  } from 'react-bootstrap';
 import styles from '../../styles/component/header.module.scss'
 import Link from 'next/link'
+import Badge from '@material-ui/core/Badge';
+import { withStyles } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
+const StyledBadge = withStyles((theme) => ({
+    badge: {
+      right: -3,
+      top: 13,
+      border: `2px solid ${theme.palette.background.paper}`,
+      padding: '0 4px',
+    },
+  }))(Badge);
+  
 
 const  Header = () => {
     return (
@@ -10,11 +24,20 @@ const  Header = () => {
 
             <Navbar className={styles.mainNav} collapseOnSelect expand="md" bg="dark" variant="dark">
 
-                <div className={styles.signPhone}>
+                {!true ?  <div className={styles.signPhone}>
                         <Link href="/signin"><a>تسجيل دخول</a></Link>
                         <p>|</p>
                         <Link href="/signup"><a>انشاء حساب</a></Link>
-                </div>
+                </div> : <div className={styles.shopCart}>
+                    <Link href="/save-products"><a><IconButton aria-label="cart" className={styles.btn}>
+                        <StyledBadge badgeContent={5} color="secondary">
+                            <ShoppingCartIcon />
+                        </StyledBadge>
+                    </IconButton></a></Link>
+                </div>}
+               
+
+                
                 <Container style={{width: "100% !important"}}>
                 <Navbar.Brand  className={styles.logoTitle}>
                         <Link href="/"><a>أزرق ستـــور</a></Link>
@@ -38,12 +61,20 @@ const  Header = () => {
                 <Col className={styles.colOne}>
                     <Link href="/"><a>أزرق ستـــور</a></Link>
                 </Col>
-                <Col className={styles.colTwo}>
 
+                {!true ?   <Col className={styles.colTwo}>
                     <Link href="/signin"><a className={styles.links}>تسجـيل دخــول</a></Link>
                     <p>|  </p>
                     <Link href="/signup"><a  className={styles.links}>انشــاء حسـاب</a></Link>
-                </Col>
+                </Col> :  <Col className={styles.shopCart}>
+                    <Link href="/save-products"><a><IconButton aria-label="cart" className={styles.btn}>
+                        <StyledBadge badgeContent={4} color="secondary">
+                            <ShoppingCartIcon className={styles.shopIcon} />
+                        </StyledBadge>
+                    </IconButton></a></Link>
+                </Col> }
+              
+               
             </Row>
 
             <Row className={styles.secondRow}>
